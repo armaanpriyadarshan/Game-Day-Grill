@@ -13,16 +13,24 @@ body {
     background-color: #fdfdfd;
 }
 
+.top{
+    display:flex;
+    font-size: 2.2vw;
+}
+
 .logo {
     text-align: center;
     margin-top: 50px;
+    margin-left: 48%;
 }
-
 .logo img {
     width: 50px;
     margin-left: 17px;
 }
-
+.contact{
+    margin-top: 50px;
+    margin-left: 40%;
+}
 .navbar {
     padding: 2px;
     font-size: 18px;
