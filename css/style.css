@@ -187,3 +187,8 @@ body {
 .gallery .option:hover .textbox {
     transform: scale(1.12); 
 }
+
+.reserve {
+    margin-top: 100px;
+    text-align: center;
+}
