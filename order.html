@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <!-- Favicon generated with StableDiffusion -->
         <link rel="icon" type="image/png" href="img/logo.png">
         <title>Home | Game Day Grill</title>
@@ -9,10 +11,14 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <div class="logo">
-            <a href="index.html">
-                <img src ="img/logo.png" alt="logo">
-            </a>
+        <div class="header">
+            <div class="address"><b>123 Main Street</b>,<br>Anytown, USA</div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src ="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="contact"><ion-icon name="call-outline"></ion-icon> (123) 456-7890<br><ion-icon name="mail-outline"></ion-icon> gamedaygrill@gmail.com</div>
         </div>
         <div class="navbar">
             <ul>
@@ -21,5 +27,64 @@
                 <li><a class="hover-underline-animation" href="reservations.html">RESERVE</a></li>
             </ul>
         </div>
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="">
+                  <div class="row">
+                    <div class="col-50">
+                        <h3>Order Information</h3>
+                        <input type="text" name="orderinfo" placeholder="Enter order information">
+                    </div>
+
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><ion-icon name="person-outline"></ion-icon> Full Name</label>
+                      <input type="text" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><ion-icon name="mail-outline"></ion-icon> Email</label>
+                      <input type="text" name="email" placeholder="john@example.com">
+                      <label for="adr"><ion-icon name="home-outline"></ion-icon> Address</label>
+                      <input type="text" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><ion-icon name="business-outline"></ion-icon> City</label>
+                      <input type="text" name="city" placeholder="New York">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="cname"><ion-icon name="id-card-outline"></ion-icon> Name on Card</label>
+                      <input type="text" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum"><ion-icon name="card-outline"></ion-icon> Credit Card Number</label>
+                      <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" name="expmonth" placeholder="September">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
+            </div>
+          </div> 
     </body>
 </html>

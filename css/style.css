@@ -13,18 +13,37 @@ body {
     background-color: #fdfdfd;
 }
 
-.logo {
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 50px;
+    font-family: Abel;
+    font-size: 18px;
+}
+
+.header .address {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.header .logo {
     text-align: center;
-    margin-top: 50px;
+    margin-left: 90px;
 }
-.logo img {
+
+.header .logo img {
     width: 50px;
-    margin-left: 17px;
 }
-.contact{
-    margin-top: 50px;
-    margin-left: 40%;
+
+.header .contact {
+    text-align: right;
+    margin-right: 100px;
 }
+
+ion-icon {
+    vertical-align: -3px;
+}
+
 .navbar {
     padding: 2px;
     font-size: 18px;
@@ -193,4 +212,93 @@ body {
 .reserve {
     margin-top: 100px;
     text-align: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #fdfdfd;
+  margin: 100px 150px;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-family: Abel;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 98%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Abel;
+  font-size: 18px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #1b1b1b;
+  color: #fdfdfd;
+  font-family: Abel;
+  font-size: 24px;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
 }
