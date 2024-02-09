@@ -70,7 +70,7 @@ body {
 }
 
 .cover h2 {
-    font-family: 'Abel';
+    font-family: Abel;
     font-size: 20px;
     color: #1b1b1b;
     writing-mode: vertical-rl;
@@ -93,7 +93,7 @@ body {
 
 .cover .upper, .lower {
     padding: 2px;
-    font-family: 'Abel';
+    font-family: Abel;
     font-size: 20px;
     color: #1b1b1b;
 }
