@@ -13,11 +13,6 @@ body {
     background-color: #fdfdfd;
 }
 
-.top{
-    display:flex;
-    font-size: 2.2vw;
-}
-
 .logo {
     text-align: center;
     margin-top: 50px;
