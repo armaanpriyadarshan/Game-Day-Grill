@@ -306,3 +306,63 @@ span.price {
     flex-direction: column-reverse;
   }
 }
+
+.menu-header, .menu-subheader{
+    display: flex;
+    justify-content: center;
+    font-family: Sovana;
+    position:relative;
+}
+
+.menu-subheader {
+    padding:20px;
+}
+
+.menu-subheader::before {
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.517);
+}
+
+.menu-subheader::after {
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.517);
+}
+
+.menu-list {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom:100px;
+}
+
+.itemized {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemized h2 {
+    font-size: 20px;
+    font-family: Abel;
+}
+
+.desc {
+    padding-right:35%;
+    font-style: italic;
+    color:#323232;
+}
+
+.item {
+    padding: 5px;
+}
