@@ -28,7 +28,7 @@ body {
 
 .header .logo {
     text-align: center;
-    margin-left: 90px;
+    margin-left: 52px;
 }
 
 .header .logo img {
@@ -48,6 +48,10 @@ ion-icon {
     padding: 2px;
     font-size: 18px;
     text-align: center;
+}
+
+.navbar ul {
+    padding: 0px;
 }
 
 .navbar li {
