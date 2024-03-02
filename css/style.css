@@ -323,6 +323,16 @@ span.price {
     font-family: Sovana;
     position:relative;
 }
+.events-header h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 .loyalty-header {
     padding-top: 30px;
 }
@@ -513,12 +523,16 @@ span.price {
     width: 80%;
     margin: 30px 10%;
     justify-content: space-evenly;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .card {
     width: 16rem;
     transform: scale(1.0);
     transition: transform 0.25s ease-out;
+    margin-bottom: 20px;
 }
 .card-img-top {
     filter: saturate(0.4) brightness(0.8);
