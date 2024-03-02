@@ -366,64 +366,97 @@ span.price {
 .item {
     padding: 5px;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     body {
-        font-size: 14px;
+        background-color: #fdfdfd;
     }
 
     .header {
-        grid-template-columns: 1fr;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 20px;
+        font-size: 14px;
     }
 
-    .header .address, .header .logo, .header .contact {
-        margin-left: 20px;
-        margin-right: 20px;
+    .header .address, .header .contact {
+        margin: 10px;
+        text-align: center;
     }
 
-    .cover {
-        margin: 50px 20px;
-        flex-direction: column;
+    .header .logo img {
+        width: 40px;
     }
 
-    .cover h2, .cover .title h1, .cover .upper, .cover .lower {
-        font-size: 16px;
-    }
-
-    .cover .title h1 {
-        font-size: 60px;
-    }
-
-    .about, .container {
-        margin: 50px 20px;
-    }
-
-    .gallery {
-        flex-direction: column;
-    }
-
-    .gallery .option {
-        margin-bottom: 20px;
+    .navbar ul {
+        padding: 0;
     }
 
     .navbar li {
         display: block;
         margin: 5px 0;
     }
-}
 
-/* Adjust font sizes for smaller devices */
-@media screen and (max-width: 600px) {
-    .header, .navbar, .hover-underline-animation, .cover h2, .cover .title h1, .cover .upper, .cover .lower, .about .mission p, .gallery .option .textbox, .container, input[type=text], .btn {
-        font-size: smaller;
+    .cover {
+        margin: 50px 20px;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-/* Adjust layout for menu and reservation forms on smaller screens */
-@media screen and (max-width: 600px) {
-    .row, .col-25, .col-50, .col-75 {
+    .cover h2, .cover .upper, .cover .lower {
+        font-size: 18px;
+    }
+
+    .cover .title h1 {
+        font-size: 80px;
+    }
+
+    .about {
+        margin: 100px 20px;
+    }
+
+    .about img {
         width: 100%;
-        margin: 0;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .about .mission {
+        padding: 50px 20px;
+    }
+
+    .about .mission p {
+        font-size: 18px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .gallery .option {
+        margin-bottom: 20px;
+    }
+
+    .gallery .option img, .gallery .option .textbox {
+        width: 100%;
+    }
+
+    .container, .reserve {
+        margin: 50px 20px;
+    }
+
+    input[type="text"], .btn {
+        font-size: 16px;
+    }
+
+    .menu-list {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .itemized h2, .desc {
+        font-size: 18px;
     }
 }
