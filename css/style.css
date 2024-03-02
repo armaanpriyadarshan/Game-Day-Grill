@@ -32,7 +32,7 @@ body {
 
 .header .logo {
     text-align: center;
-    margin-left: 52px;
+    margin-left: 58px;
 }
 
 .header .logo img {
@@ -48,21 +48,24 @@ ion-icon {
     vertical-align: -3px;
 }
 
-.navbar {
+.navbar-custom {
     padding: 2px;
     font-size: 18px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar ul {
+.navbar-custom ul {
     padding: 0px;
 }
 
-.navbar li {
+.navbar-custom li {
     display: inline;
 }
 
-.navbar a {
+.navbar-custom a {
     padding: 4px 18px;
     font-family: Abel;
     color: #000000;
@@ -177,9 +180,12 @@ ion-icon {
 
 .gallery {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto 150px;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 80px;
 }
 
 .gallery a {
@@ -311,11 +317,14 @@ span.price {
   }
 }
 
-.menu-header, .menu-subheader{
+.menu-header, .menu-subheader, .events-header, .loyalty-header {
     display: flex;
     justify-content: center;
     font-family: Sovana;
     position:relative;
+}
+.loyalty-header {
+    padding-top: 30px;
 }
 
 .menu-subheader {
@@ -402,12 +411,12 @@ span.price {
         margin-right: 20px;
     }
 
-    .navbar ul {
+    .navbar-custom ul {
         padding: 0;
         margin-left: 6px;
     }
 
-    .navbar li {
+    .navbar-custom li {
         margin: 5px 0;
         display: inline;
     }
@@ -497,4 +506,64 @@ span.price {
     .itemized h2, .desc {
         font-size: 18px;
     }
+}
+
+.events-container {
+    display: flex;
+    width: 80%;
+    margin: 30px 10%;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 16rem;
+    transform: scale(1.0);
+    transition: transform 0.25s ease-out;
+}
+.card-img-top {
+    filter: saturate(0.4) brightness(0.8);
+    transition: filter 0.25s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+.card:hover .card-img-top {
+    filter: saturate(1) brightness(1);
+}
+
+.loyalty-banner {
+    background-color: #f4f1e9;
+}
+
+.loyalty-description {
+    width: 50vw;
+}
+
+.loyalty-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.loyalty-body .mission {
+    padding: 0px 50px 20px 50px;
+    background-color: #f4f1e9;
+}
+
+.loyalty-body .mission p {
+    margin-bottom: 50px;
+    font-family: Abel;
+    font-size: 24px;
+}
+
+.loyalty-body .mission hr {
+    width: 100px;
+    height: 2px;
+    background-color: #1b1b1b;
+    border: none;
+}
+.loyalty-form {
+    width: 30vw;
 }
