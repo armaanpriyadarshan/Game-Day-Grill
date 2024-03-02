@@ -446,13 +446,11 @@ span.price {
     }
 
     .parallax {
-        margin: 50px 10px;
-        min-height: 400px;
-        /* background-size: 250% auto; */
+        display: none;
     }
 
     .about {
-        margin: 50px 20px 80px;
+        margin: 60px 20px 80px;
     }
 
     .about img {
