@@ -366,3 +366,64 @@ span.price {
 .item {
     padding: 5px;
 }
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header .address, .header .logo, .header .contact {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cover {
+        margin: 50px 20px;
+        flex-direction: column;
+    }
+
+    .cover h2, .cover .title h1, .cover .upper, .cover .lower {
+        font-size: 16px;
+    }
+
+    .cover .title h1 {
+        font-size: 60px;
+    }
+
+    .about, .container {
+        margin: 50px 20px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery .option {
+        margin-bottom: 20px;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Adjust font sizes for smaller devices */
+@media screen and (max-width: 600px) {
+    .header, .navbar, .hover-underline-animation, .cover h2, .cover .title h1, .cover .upper, .cover .lower, .about .mission p, .gallery .option .textbox, .container, input[type=text], .btn {
+        font-size: smaller;
+    }
+}
+
+/* Adjust layout for menu and reservation forms on smaller screens */
+@media screen and (max-width: 600px) {
+    .row, .col-25, .col-50, .col-75 {
+        width: 100%;
+        margin: 0;
+    }
+}
