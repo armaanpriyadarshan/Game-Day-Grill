@@ -603,3 +603,11 @@ span.price {
 .loyalty-form {
     width: 30vw;
 }
+
+.address, .contact {
+    line-height: normal !important;
+}
+
+.navbar-custom ul {
+    margin-top: 18px;
+}
