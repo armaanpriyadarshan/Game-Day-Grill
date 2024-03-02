@@ -486,6 +486,28 @@ span.price {
         font-size: 18px;
     }
 
+    .loyalty-body .mission {
+        padding: 0px 0px 20px 0px !important;
+    }
+
+    .loyalty-body .mission p {
+        font-size: 18px !important;
+    }
+    .loyalty-header h2 {
+        font-size: 25px !important;
+    }
+    .loyalty-body {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100vw;
+        margin-top: 20px !important;
+    
+    }
+    .loyalty-form, .loyalty-description {
+        width: 70vw !important;
+    }
+
     .gallery {
         flex-direction: column;
         width: 90%;
