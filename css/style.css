@@ -448,11 +448,11 @@ span.price {
     .parallax {
         margin: 50px 10px;
         min-height: 400px;
-        background-size: 200% auto;
+        background-size: 250% auto;
     }
 
     .about {
-        margin: 100px 20px 80px;
+        margin: 50px 20px 80px;
     }
 
     .about img {
