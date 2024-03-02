@@ -99,7 +99,7 @@ ion-icon {
 }
 
 .cover {
-    margin: 100px 150px;
+    margin: 20px 150px 100px 150px;
     display: flex;
     align-items: center;
 }
